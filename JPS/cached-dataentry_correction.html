@@ -1,0 +1,3168 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Data Entry Correction</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+  </head>
+
+    <style>
+.input-group-addon {
+
+	min-width:80px;
+	background-color: whitesmoke;
+    text-align:left;
+
+}
+.marginRow {
+     margin:0px ;
+   }
+
+.tbutton {
+	background-color: Transparent;
+	border: none;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+	text-align: left;
+    outline:none;
+	color:black;
+
+}
+ #chat_button{
+	  z-index:200;
+	 float:right;
+	 cursor:pointer;
+
+	 height:5%;
+	  width:15%;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+
+
+.modal-content.ui-resizable {
+  overflow-y: scroll;
+  position: static;
+}
+
+.modal-content{
+	background:#fff0e5;
+
+}
+
+.mytext{
+    border:0;padding:10px;background:#FEFEFE;
+}
+.mytext1{
+    border:0;padding:10px;background:#FEFEFE; opacity: 0.8;
+}
+
+
+.text{
+    width:75%;display:flex;flex-direction:column;
+}
+.text > p:first-of-type{
+    width:100%;margin-top:0;margin-bottom:auto;line-height: 13px;font-size: 12px;
+}
+.text > p:last-of-type{
+    width:100%;text-align:right;color:silver;margin-bottom:-7px;margin-top:auto;
+}
+.text-l{
+    float:left;padding-right:10px;
+}
+.text-r{
+    color:white; float:right;padding-left:10px;
+}
+.avatar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:25%;
+    float:left;
+    padding-right:10px;
+}
+.macro{
+    margin-top:5px;width:85%;border-radius:5px;padding:5px;display:flex;
+}
+.msj-rta{
+    float:right;background:#ef1c1c;
+}
+.msj{
+    float:left;background:white;
+}
+.frame{
+    background:#fff0e5;
+    height:450px;
+    padding:0;
+}
+.frame1{
+    background:#b70707;
+    height:450px;
+	padding:0;
+}
+
+.frame > div:last-of-type{
+    position:absolute;bottom:5px;width:100%;display:flex;
+}
+ul#chat {
+    width:100%;
+    list-style-type: none;
+    padding:18px;
+    position:absolute;
+    bottom:32px;
+    display:flex;
+    flex-direction: column;
+}
+
+ul#user {
+    width:100%;
+    padding:5px;
+    bottom:10px;
+}
+
+#user li{
+	height:45px;
+	vertical-align: middle;
+}
+
+#user li:hover{
+	background-color: rgba(255, 255, 255, 0.5);
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+
+.msj:before{
+    width: 0;
+    height: 0;
+    content:"";
+    top:-5px;
+    left:-14px;
+    position:relative;
+    border-style: solid;
+    border-width: 0 13px 13px 0;
+    border-color: transparent #ffffff transparent transparent;
+}
+.msj-rta:after{
+    width: 0;
+    height: 0;
+    content:"";
+    top:-5px;
+    left:14px;
+    position:relative;
+    border-style: solid;
+    border-width: 13px 13px 0 0;
+    border-color: #ef1c1c transparent transparent transparent;
+}
+input:focus{
+    outline: none;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #d4d4d4;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #d4d4d4;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #d4d4d4;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #d4d4d4;
+}
+
+
+
+
+.fontAwesome {
+  font-family: 'Helvetica', FontAwesome, sans-serif;
+}
+
+
+
+  </style>
+ <style>
+
+ table {
+    width: 100%;
+}
+
+th {
+	text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+
+td {
+	text-transform: uppercase;
+	padding: 1px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tbutton {
+	background-color: Transparent;
+	border: none;
+  background-repeat:no-repeat;
+  cursor:pointer;
+  overflow: hidden;
+	text-align: left;
+  outline:none;
+	color:blue;
+}
+
+.marquee {
+   width: 800px;
+   margin: 0 auto;
+   background:yellow;
+   white-space: nowrap;
+   overflow: hidden;
+   box-sizing: border-box;
+   color:blue;
+   font-size:18px;
+}
+
+.marquee span {
+   display: inline-block;
+   padding-left: 100%;
+   text-indent: 0;
+   animation: marquee 15s linear infinite;
+}
+
+.marquee span:hover {
+    animation-play-state: paused
+}
+
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+</style>
+
+
+ <style>
+hr { margin: 0.07em auto; }
+
+table {
+    width: 100%;
+	font-size:15px;
+}
+
+th {
+	text-align: center;
+    border-bottom: 1px solid #ddd;
+
+}
+
+td {
+
+padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tbutton {
+	background-color: Transparent;
+	border: none;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+	text-align: left;
+    outline:none;
+	color:green;
+}
+
+.marquee {
+   width: 800px;
+   margin: 0 auto;
+   background:yellow;
+   white-space: nowrap;
+   overflow: hidden;
+   box-sizing: border-box;
+   color:blue;
+   font-size:18px;
+}
+
+.marquee span {
+   display: inline-block;
+   padding-left: 100%;
+   text-indent: 0;
+   animation: marquee 15s linear infinite;
+}
+
+.marquee span:hover {
+    animation-play-state: paused
+}
+
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+  </style>
+
+ <body>
+
+
+
+<div id="wrapper"  style=" padding-top:  px;">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">			</a>
+            </div>
+            <!-- /.navbar-header -->
+            <ul class="nav navbar-nav navbar-right">
+
+
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user  "></i> <i class="glyphicon glyphicon-triangle-bottom"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><form  > <button class= 'tbutton'><i class="fa fa-cog fa-spin fa-fw"></i> 																				</button> </form>
+												</li>
+
+                        <li class="divider"></li>
+
+                        <li><form  method="post" action="logout.php" > <input type="hidden" name="logout" value="namanirnaya_login.php"><button class= 'tbutton'> <i class="fa fa-sign-out fa-fw"></i> Logout </button> </form> </li>
+
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+
+
+</div>
+<div id= "row" style="padding: 10px;" >
+	<div class="col-sm-12" style="background-color:; margin-top:  px; " >
+		<div id="" style="overflow-y: scroll; height:700px;">
+
+ <h3 style=' text-align:center;color:purple; '><u> Sri Sri Hare Krishna Namahatta,&nbsp.,&nbspDhaka </u></h3><table  class='table table-bordered table-striped' >
+	<tr>
+	<th width= 200 >Image</th> <th>Devotee Information</th>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040001>Reg: 0318040001</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Monimala Barman</span> <hr>
+			 মনি  মালা  বর্মন    <hr>
+			Address: Zinjira Dhaka  <hr>
+			Phone: 01714823287  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 40  <hr>
+			Service: HOUSEWIFE, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040002>Reg: 0318040002</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Binita Rani Sill</span> <hr>
+			 বিনীত  রানী  শীল    <hr>
+			Address: Dospina Putuyakhali  <hr>
+			Phone: 01977444066  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 27  <hr>
+			Service: HOUSEWIFE, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040003>Reg: 0318040003</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Moni Mala Barman</span> <hr>
+			 মনি  মালা  বর্মন    <hr>
+			Address: Kerinegonj Dhaka  <hr>
+			Phone: 01771320931  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 35  <hr>
+			Service: HOUSEWIFE, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040004>Reg: 0318040004</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Mala Rani Barman </span> <hr>
+			 মালা রানী বর্মন    <hr>
+			Address: Kerinegonj Dhaka  <hr>
+			Phone: 01975917575  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDB</span>)&nbsp &nbsp Age: 30  <hr>
+			Service: HOUSEWIFE, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040005>Reg: 0318040005</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Sumon Barman </span> <hr>
+			 সুমন বর্মন    <hr>
+			Address: Kerinegonj Dhaka  <hr>
+			Phone: 01975917575  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 35  <hr>
+			Service: BUSINESS, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040006>Reg: 0318040006</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Tulsi Barman </span> <hr>
+			 তুলসী বর্মন    <hr>
+			Address: Kerinegonj Dhaka  <hr>
+			Phone: 01675917575  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 26  <hr>
+			Service: HOUSEWIFE, Education: Graduation<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040007>Reg: 0318040007</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Pratima Das </span> <hr>
+			 প্রতিমা দাস   <hr>
+			Address: Sutrapur Dhaka   <hr>
+			Phone: 01948680574  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 47  <hr>
+			Service: EMPLOYEE, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040008>Reg: 0318040008</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Tushar Kumar Haldar </span> <hr>
+			 তুষার কুমার হালদার    <hr>
+			Address: Dhramaganj, mehendiganj, Barishal  <hr>
+			Phone: 01516156106  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 22  <hr>
+			Service: STUDENT, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040009>Reg: 0318040009</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Lipin Das </span> <hr>
+			 লিপিন দাস    <hr>
+			Address: Shampur Dhaka  <hr>
+			Phone: 01683525641  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 39  <hr>
+			Service: Workshop, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040010>Reg: 0318040010</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Sikha Rani Das </span> <hr>
+			 শিখা রানী দাস    <hr>
+			Address: Shampur Dhaka  <hr>
+			Phone: 01923241257  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 30  <hr>
+			Service: HOUSEWIFE, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040011>Reg: 0318040011</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Bijon Kumar Halder </span> <hr>
+			 বিজন কুমার হালদার    <hr>
+			Address: Bera Pabna  <hr>
+			Phone: 01714204511  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 34  <hr>
+			Service: EMPLOYEE, Education: Graduation<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040012>Reg: 0318040012</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Dipa Paul</span> <hr>
+			 দীপা পাল    <hr>
+			Address: Bera Pabna  <hr>
+			Phone: 01689281196  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 26  <hr>
+			Service: HOUSEWIFE, Education: Graduation<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040013>Reg: 0318040013</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Mithu Rani Debnath </span> <hr>
+			 মিঠু রানী দেবনাথ    <hr>
+			Address: Haziganj, Chandpur,   <hr>
+			Phone: 01643353968  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 42  <hr>
+			Service: HOUSEWIFE, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040014>Reg: 0318040014</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Nondine Sarkar</span> <hr>
+			 নন্দিনী সরকার    <hr>
+			Address: Kerinegonj Dhaka  <hr>
+			Phone: 01771320931  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDB</span>)&nbsp &nbsp Age: 15  <hr>
+			Service: STUDENT, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040015>Reg: 0318040015</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Dipa Rani Das </span> <hr>
+			 দিপা রানী দাস    <hr>
+			Address: Bazitpur Kisorganj  <hr>
+			Phone: 01770325027  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDB</span>)&nbsp &nbsp Age: 18  <hr>
+			Service: STUDENT, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040016>Reg: 0318040016</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'>  Nakul Debnath </span> <hr>
+			 নকুল দেবনাথ   <hr>
+			Address: Haziganj, Chandpur,   <hr>
+			Phone: 01936081005  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 52  <hr>
+			Service: EMPLOYEE, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040017>Reg: 0318040017</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Makul Rani Debnath </span> <hr>
+			 মুকুল রানী দেবনাথ    <hr>
+			Address: Haziganj, Chandpur,   <hr>
+			Phone: 01624523350  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 49  <hr>
+			Service: HOUSEWIFE, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040018>Reg: 0318040018</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Nitai Krishna Das </span> <hr>
+			 নিতাই কৃষ্ণ দাস    <hr>
+			Address: Bangilkul Mowlavibazar   <hr>
+			Phone: 01752708998  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 24  <hr>
+			Service: temple Service, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040019>Reg: 0318040019</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Mitul Dey</span> <hr>
+			 মিতুল দে   <hr>
+			Address: Debidar Cumilla  <hr>
+			Phone: 01957267529  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDB</span>)&nbsp &nbsp Age: 23  <hr>
+			Service: STUDENT, Education: Graduation<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040020>Reg: 0318040020</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Jayanta Kumar Dey</span> <hr>
+			 জয়ন্ত কুমার দে   <hr>
+			Address: Debidar Cumilla  <hr>
+			Phone: 01827617119  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 26  <hr>
+			Service: EMPLOYEE, Education: PG<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040021>Reg: 0318040021</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Vabotosh Chandra Dey</span> <hr>
+			 ভবতোষ চন্দ্র দে   <hr>
+			Address: Debidar Cumilla  <hr>
+			Phone: 01817611473  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 54  <hr>
+			Service: BUSINESS, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040022>Reg: 0318040022</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Bizli Rani Dey </span> <hr>
+			 বিজলী রানী ,দে   <hr>
+			Address: Debidar Cumilla  <hr>
+			Phone: 01920841171  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 48  <hr>
+			Service: HOUSEWIFE, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040023>Reg: 0318040023</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Akhi Gope</span> <hr>
+			 আঁখি গোপ   <hr>
+			Address: Lakhai Habiganj  <hr>
+			Phone: 01309296480  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDB</span>)&nbsp &nbsp Age: 20  <hr>
+			Service: STUDENT, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040024>Reg: 0318040024</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Happy Gope</span> <hr>
+			 হ্যাপি গোপ   <hr>
+			Address: Lakhai Habiganj  <hr>
+			Phone: 01738461948  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDB</span>)&nbsp &nbsp Age: 27  <hr>
+			Service: TEACHER, Education: PG<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040025>Reg: 0318040025</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Tarun Chandra Ray</span> <hr>
+			 তরুন চন্দ্র রায়    <hr>
+			Address: Ramgati Laxmipur   <hr>
+			Phone: 01914909720  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 37  <hr>
+			Service: EMPLOYEE, Education: PG<hr>
+			<p> Lila: <span style='color:red;'>Gaura</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040026>Reg: 0318040026</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Lipi Rani Gope </span> <hr>
+			 লিপি রানী গোপ    <hr>
+			Address: Lakhai Habiganj  <hr>
+			Phone: 01913203219  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 30  <hr>
+			Service: EMPLOYEE, Education: Graduation<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040027>Reg: 0318040027</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Akash Chowdhury</span> <hr>
+			 আকাশ চৌধুরী    <hr>
+			Address: Sutrpure, Dhaka   <hr>
+			Phone: 01843635551  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 23  <hr>
+			Service: STUDENT, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040028>Reg: 0318040028</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Sumit Gooswami</span> <hr>
+			 সুমিত গোস্বামী    <hr>
+			Address: Bawra Cumilla  <hr>
+			Phone: 01818976689  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 36  <hr>
+			Service: BUSINESS, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040029>Reg: 0318040029</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Nibedita Sikder</span> <hr>
+			 নিবেদিতা শিকদার    <hr>
+			Address: Barua Cumilla  <hr>
+			Phone: 01818976689  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 18  <hr>
+			Service: h, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040030>Reg: 0318040030</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Niranjon Roy</span> <hr>
+			 নিরঞ্জন রায়    <hr>
+			Address: Sutrpure, Dhaka   <hr>
+			Phone: 01761043211  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 24  <hr>
+			Service: BRAHMACARI, Education: Graduation<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040031>Reg: 0318040031</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Duranta Barman </span> <hr>
+			 দুরন্ত বর্মন   <hr>
+			Address: Bhaluka Mymansingha  <hr>
+			Phone: 01762292796  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 15  <hr>
+			Service: STUDENT, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040032>Reg: 0318040032</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Prosenjit Sarker</span> <hr>
+			 প্রসেনজিৎ সরকার    <hr>
+			Address: Sakhipur Tangail  <hr>
+			Phone: 01682906239  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 23  <hr>
+			Service: STUDENT, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040033>Reg: 0318040033</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Ajit Sarker </span> <hr>
+			 অজিত সরকার    <hr>
+			Address: Sakhipur Tangail  <hr>
+			Phone: 01831784558  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 24  <hr>
+			Service: EMPLOYEE, Education: Graduation<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040034>Reg: 0318040034</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Shompa Rani Sarkar </span> <hr>
+			 শম্পা রানী সরকার    <hr>
+			Address: Baburhat Chandpur   <hr>
+			Phone: 01739238206  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 18  <hr>
+			Service: HOUSEWIFE, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040035>Reg: 0318040035</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Golapi Rani Barman </span> <hr>
+			 গোলাপী রানী বর্মন   <hr>
+			Address: Daudkandi Cumilla  <hr>
+			Phone: 01817029563  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 45  <hr>
+			Service: HOUSEWIFE, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040036>Reg: 0318040036</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Sristy Rani Barman</span> <hr>
+			 সৃষ্টি রানী বর্মন   <hr>
+			Address: Daudkandi Cumilla  <hr>
+			Phone: 01638580572  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDB</span>)&nbsp &nbsp Age: 20  <hr>
+			Service: STUDENT, Education: Graduation<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040037>Reg: 0318040037</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Sumon Vakta </span> <hr>
+			 সুমন ভক্ত    <hr>
+			Address: Seyakat Patuakhali  <hr>
+			Phone: 01746307803  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 29  <hr>
+			Service: Preacher, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040038>Reg: 0318040038</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Loab Sikdar</span> <hr>
+			 লব সিকদার    <hr>
+			Address: Bauphal Patuakhali  <hr>
+			Phone: 01790154400  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 33  <hr>
+			Service: Pujari, Education: PG<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040039>Reg: 0318040039</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Yugol Chandra Barman </span> <hr>
+			 যুগল চন্দ্র বর্মন   <hr>
+			Address: Madhupur Tanngail  <hr>
+			Phone: 01757953691  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 38  <hr>
+			Service: BUSINESS, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040040>Reg: 0318040040</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'>  Palashi Rani Barman </span> <hr>
+			 পলাশী রানী বর্মন   <hr>
+			Address: Madhupur Tanngail  <hr>
+			Phone: 01757953691  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 25  <hr>
+			Service: EMPLOYEE, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040041>Reg: 0318040041</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Krishna Chandra Barman </span> <hr>
+			 কৃষ্ণ চন্দ্র বর্মন    <hr>
+			Address: Hatibanga Lalmanirhat   <hr>
+			Phone: 01751232838  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 25  <hr>
+			Service: EMPLOYEE, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040042>Reg: 0318040042</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Beauty Rani Sutradhar</span> <hr>
+			 বিউটি রানী সূত্রধর    <hr>
+			Address: Hatibanga Lalmanirhat   <hr>
+			Phone: 01751232838  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 19  <hr>
+			Service: EMPLOYEE, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040043>Reg: 0318040043</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Sabita Rani Debnath </span> <hr>
+			 সবিতা রানী দেবনাথ    <hr>
+			Address: Bhaluka Mymansingha  <hr>
+			Phone: 01971105691  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 49  <hr>
+			Service: HOUSEWIFE, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Gaura</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040044>Reg: 0318040044</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Subhashi Rani Roy</span> <hr>
+			 শুভাষী রানী রায়    <hr>
+			Address: Bhaluka Mymansingha  <hr>
+			Phone: 01739182023  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 40  <hr>
+			Service: HOUSEWIFE, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040045>Reg: 0318040045</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Shrabon Chandra Roy</span> <hr>
+			 শ্রাবন চন্দ্র রায়   <hr>
+			Address: Bhaluka Mymansingha  <hr>
+			Phone: 01403126466  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 14  <hr>
+			Service: STUDENT, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040046>Reg: 0318040046</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Shyamol Chandra Sutradhor</span> <hr>
+			 শ্যামল চন্দ্র সূত্রধর    <hr>
+			Address: Gouripur, Mumansingha  <hr>
+			Phone: 01911808982  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 29  <hr>
+			Service: BUSINESS, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040047>Reg: 0318040047</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Monti Rani Sutradhor</span> <hr>
+			 মন্টি রানী সূত্রধর    <hr>
+			Address: Gouripur, Mumansingha  <hr>
+			Phone: 01911808982  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 18  <hr>
+			Service: HOUSEWIFE, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040048>Reg: 0318040048</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Puspa Rani Sutradhar </span> <hr>
+			 পুস্প রানী সূত্রধর   <hr>
+			Address: Gouripur, Mumansingha  <hr>
+			Phone: 01911808982  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 62  <hr>
+			Service: HOUSEWIFE, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040049>Reg: 0318040049</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Lima Rani Sutradhor</span> <hr>
+			 লিমা রানী সূত্রধর   <hr>
+			Address: Gouripur, Mumansingha  <hr>
+			Phone: 01911808982  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDB</span>)&nbsp &nbsp Age: 18  <hr>
+			Service: STUDENT, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040050>Reg: 0318040050</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Joba Rani Sutradhor </span> <hr>
+			 জবা রানী সূত্রধর    <hr>
+			Address: Gouripur, Mumansingha  <hr>
+			Phone: 01911808982  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDB</span>)&nbsp &nbsp Age: 16  <hr>
+			Service: STUDENT, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040051>Reg: 0318040051</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SANCHITA DAS</span> <hr>
+			 সঞ্চিতা দাস   <hr>
+			Address: TAHIRPUR, SUNAMGANJ  <hr>
+			Phone: 01841543653  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 31  <hr>
+			Service: EMPLOYEE, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040052>Reg: 0318040052</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> PANKAJ DAS</span> <hr>
+			 পংকজ দাস   <hr>
+			Address: TAHIRPUR, SUNAMGANJ  <hr>
+			Phone: 01841543653  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 34  <hr>
+			Service: EMPLOYEE, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040053>Reg: 0318040053</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> PUJA DAS</span> <hr>
+			 পূজা দাস   <hr>
+			Address: TAHIRPUR, SUNAMGANJ  <hr>
+			Phone: 01841543653  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDB</span>)&nbsp &nbsp Age: 13  <hr>
+			Service: STUDENT, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040054>Reg: 0318040054</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> BISWAJEET CHANDRA SUTRADHAR</span> <hr>
+			 বিশ্বজিৎ চন্দ্র সূত্রধর   <hr>
+			Address: KENDUWA, NETROKONA  <hr>
+			Phone: 01982043589  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 24  <hr>
+			Service: EMPLOYEE, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040055>Reg: 0318040055</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'>  RAJIB SAHA</span> <hr>
+			 রাজীব সাহা   <hr>
+			Address: KALIAKAYAR, GAZIPUR  <hr>
+			Phone: 01730942186  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 35  <hr>
+			Service: BUSINESS, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040056>Reg: 0318040056</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> BISWAJITH SHARMA</span> <hr>
+			 বিশ্বজিৎ শর্মা   <hr>
+			Address: JOYDEBPUR, GAZIPUR  <hr>
+			Phone: 01929358248  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 30  <hr>
+			Service: EMPLOYEE, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040057>Reg: 0318040057</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> LIPA RANI DAS</span> <hr>
+			 লিপা রাণী দাস   <hr>
+			Address: BIRGONJ, GAZIPUR  <hr>
+			Phone: 01929358248  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 20  <hr>
+			Service: HOUSEWIFE, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040058>Reg: 0318040058</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> RADHARANI SUTRADHAR</span> <hr>
+			 রাধা রাণী সূত্রধর   <hr>
+			Address: GOURIPUR, MYMENSING  <hr>
+			Phone: 01639758879  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 35  <hr>
+			Service: EMPLOYEE, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040059>Reg: 0318040059</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> VAJAAN CHANDRA SUTRADHAR</span> <hr>
+			 ভজন চন্দ্র সূত্রধর   <hr>
+			Address: PURBADHALA, NETROKONA  <hr>
+			Phone: 01993269280  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 35  <hr>
+			Service: EMPLOYEE, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040060>Reg: 0318040060</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SHIMA RANI BISWASH</span> <hr>
+			 সীমা রানী বিশ্বাস   <hr>
+			Address: PURBADHALA, NETROKONA  <hr>
+			Phone: 01993269280  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 35  <hr>
+			Service: HOUSEWIFE, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040061>Reg: 0318040061</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> BAPPY DHAR</span> <hr>
+			 বাপ্পি ধর   <hr>
+			Address: KALIGANJ, GAZIPUR  <hr>
+			Phone: 01790452816  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 25  <hr>
+			Service: STUDENT, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040062>Reg: 0318040062</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> RITA SHARMA</span> <hr>
+			 রিতা শর্মা   <hr>
+			Address: JOYDEBPUR, GAZIPUR  <hr>
+			Phone: 01914509147  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 40  <hr>
+			Service: HOUSEWIFE, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040063>Reg: 0318040063</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SANJAY SHARMA</span> <hr>
+			 সঞ্জয় শর্মা   <hr>
+			Address: JOYDEBPUR, GAZIPUR  <hr>
+			Phone: 01715846568  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 45  <hr>
+			Service: BUSINESS, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040064>Reg: 0318040064</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> DIPALI RANI SHARMA</span> <hr>
+			 দিপালী রানী শর্মা   <hr>
+			Address: JOYDEBPUR, GAZIPUR  <hr>
+			Phone: 01914509147  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDW</span>)&nbsp &nbsp Age: 70  <hr>
+			Service: HOUSEWIFE, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040065>Reg: 0318040065</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> HRIDOY DEBNATH</span> <hr>
+			 হৃদয় দেবনাথ   <hr>
+			Address: CHATKHIL, NOWAKHALI  <hr>
+			Phone: 01625954277  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 19  <hr>
+			Service: STUDENT, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040066>Reg: 0318040066</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SABITA RANI PAUL</span> <hr>
+			 সবিতা রানী পাল   <hr>
+			Address: KONABARI, GAZIPUR  <hr>
+			Phone: 01812479087  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 60  <hr>
+			Service: HOUSEWIFE, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040067>Reg: 0318040067</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> BIMAL KANTI PAUL</span> <hr>
+			 বিমল কান্তি পাল   <hr>
+			Address: KON  <hr>
+			Phone: 01812479087  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 35  <hr>
+			Service: BUSINESS, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040068>Reg: 0318040068</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SUMA RANI BISWAS</span> <hr>
+			 সোমা রানী বিশ্বাস   <hr>
+			Address: KONABARI, GAZIPUR  <hr>
+			Phone: 01626252047  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 25  <hr>
+			Service: HOUSEWIFE, Education: PG<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040069>Reg: 0318040069</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> PURNA SAHA</span> <hr>
+			 পূর্ণ সাহা   <hr>
+			Address: KONABARI, GAZIPUR  <hr>
+			Phone: 01795777830  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 34  <hr>
+			Service: BUSINESS, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040070>Reg: 0318040070</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> PANKAJ SAHA</span> <hr>
+			 পংকজ সাহা   <hr>
+			Address: KONABARI, GAZIPUR  <hr>
+			Phone: 01718278406  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 32  <hr>
+			Service: BUSINESS, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040071>Reg: 0318040071</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SUDHIR MOHANTO</span> <hr>
+			 সুধীর মহন্ত   <hr>
+			Address: JOYDEBPUR, GAZIPUR  <hr>
+			Phone: 01746561012  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 54  <hr>
+			Service: EMPLOYEE, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Gaura</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040072>Reg: 0318040072</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> KIRAN BAIDYA</span> <hr>
+			 কিরণ বৈদ্য   <hr>
+			Address: AGAILJHARA, BARISHAL  <hr>
+			Phone: 01742750059  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 33  <hr>
+			Service: EMPLOYEE, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040073>Reg: 0318040073</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> MITHU BARAI</span> <hr>
+			 মিঠু বাড়ৈ   <hr>
+			Address: KOTALIPARA, GOPALGANJ  <hr>
+			Phone: 01952388426  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 26  <hr>
+			Service: HOUSEWIFE, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040074>Reg: 0318040074</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> DEBRATO SARKAR</span> <hr>
+			 দেব্রত সরকার   <hr>
+			Address: KONABARI, GAZIPUR  <hr>
+			Phone: 01722903126  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 28  <hr>
+			Service: EMPLOYEE, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040075>Reg: 0318040075</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> NARAYAN SAHA</span> <hr>
+			 নারায়ণ সাহা   <hr>
+			Address: KONABARI, GAZIPUR  <hr>
+			Phone: 01774080175  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 35  <hr>
+			Service: EMPLOYEE, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040076>Reg: 0318040076</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SAHADEB PAUL</span> <hr>
+			 সহদেব পাল        <hr>
+			Address: KALIAKAYAR, GAZIPUR  <hr>
+			Phone: 01726385087  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 44  <hr>
+			Service: BUSINESS, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040077>Reg: 0318040077</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> KAKOLI PAUL</span> <hr>
+			 কাকলী পাল   <hr>
+			Address: KALIAKAYAR, GAZIPUR  <hr>
+			Phone: 01739553515  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 28  <hr>
+			Service: HOUSEWIFE, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040078>Reg: 0318040078</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> DIPANKAR DAS</span> <hr>
+			 দীপংকর দাস   <hr>
+			Address: KONABARI, GAZIPUR  <hr>
+			Phone: 01990559065  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 28  <hr>
+			Service: EMPLOYEE, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040079>Reg: 0318040079</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> MALA RANI DAS</span> <hr>
+			 মালা রানী দাস   <hr>
+			Address: KONABARI, GAZIPUR  <hr>
+			Phone: 01725385083  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 28  <hr>
+			Service: EMPLOYEE, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040080>Reg: 0318040080</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> BILASH CHANDRA DAS</span> <hr>
+			 বিলাস চন্দ্র দাস   <hr>
+			Address: KONABARI, GAZIPUR  <hr>
+			Phone: 01752589090  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 35  <hr>
+			Service: EMPLOYEE, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Gaura</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040081>Reg: 0318040081</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SUJAN CHANDRA DAS</span> <hr>
+			 সুজন চন্দ্র দাস   <hr>
+			Address: KONABARI, GAZIPUR  <hr>
+			Phone: 01788647663  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 29  <hr>
+			Service: EMPLOYEE, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040082>Reg: 0318040082</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> LIPA RANI MOHONTO</span> <hr>
+			 লিপা রানী মহন্ত   <hr>
+			Address: KONABARI, GAZIPUR  <hr>
+			Phone: 01788647663  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 18  <hr>
+			Service: HOUSEWIFE, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040083>Reg: 0318040083</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> BABITA PAUL</span> <hr>
+			 ববিতা পাল   <hr>
+			Address: KALIAKAYAR, GAZIPUR  <hr>
+			Phone: 01746435209  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 37  <hr>
+			Service: HOUSEWIFE, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040084>Reg: 0318040084</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SHITAL PAUL</span> <hr>
+			 শীতল পাল   <hr>
+			Address: KALIAKAYAR, GAZIPUR  <hr>
+			Phone: 01746435209  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 43  <hr>
+			Service: BUSINESS, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040085>Reg: 0318040085</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> UTTAM KUMAR PAUL</span> <hr>
+			  উত্তম কুমার পাল   <hr>
+			Address: KALIAKAYAR, GAZIPUR  <hr>
+			Phone: 01717717394  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 40  <hr>
+			Service: BUSINESS, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040086>Reg: 0318040086</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SUMA PAUL</span> <hr>
+			 সুমা পাল   <hr>
+			Address: KALIAKAYAR, GAZIPUR  <hr>
+			Phone: 01756413333  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 26  <hr>
+			Service: HOUSEWIFE, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040087>Reg: 0318040087</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> MONTY RANI BARMAN</span> <hr>
+			  মন্টি রাণী বর্মণ   <hr>
+			Address: KALIAKAYAR, GAZIPUR  <hr>
+			Phone: 01725489137  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 26  <hr>
+			Service: HOUSEWIFE, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040088>Reg: 0318040088</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SUPRAVA DEVI</span> <hr>
+			 সুপ্রভা দেবী   <hr>
+			Address: KONABARI, GAZIPUR  <hr>
+			Phone: 01772123202  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 39  <hr>
+			Service: EMPLOYEE, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040089>Reg: 0318040089</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> DIPLAL BAJFOUR</span> <hr>
+			 দিপলাল বাশফোড়   <hr>
+			Address: JOYDEBPUR, GAZIPUR  <hr>
+			Phone: 01929350262  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 50  <hr>
+			Service: EMPLOYEE, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Gaura</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040090>Reg: 0318040090</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> BHAROTI BAJFOUR</span> <hr>
+			 ভারতী বাঁশফোড়   <hr>
+			Address: JOYDEBPUR, GAZIPUR  <hr>
+			Phone: 01929350262  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 40  <hr>
+			Service: EMPLOYEE, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Gaura</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040091>Reg: 0318040091</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SHADHAN CHANDRA SARKAR</span> <hr>
+			  সাধন চন্দ্র সরকার   <hr>
+			Address: JOYDEBPUR, GAZIPUR  <hr>
+			Phone: 01753719117  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 32  <hr>
+			Service: EMPLOYEE, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040092>Reg: 0318040092</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SHIPRA RANI SARKER</span> <hr>
+			 শিপ্রা রাণী সরকার   <hr>
+			Address: KALIAKAYAR, GAZIPUR  <hr>
+			Phone: 01826570448  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 30  <hr>
+			Service: HOUSEWIFE, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040093>Reg: 0318040093</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> BINOY PAL</span> <hr>
+			 বিনয় পাল   <hr>
+			Address: DOHAR, DHAKA  <hr>
+			Phone: 01924757684  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 32  <hr>
+			Service: BUSINESS, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040094>Reg: 0318040094</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> JHORNA PAL</span> <hr>
+			 ঝর্ণা পাল   <hr>
+			Address: DOHAR, DHAKA  <hr>
+			Phone: 01924757684  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 32  <hr>
+			Service: HOUSEWIFE, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040095>Reg: 0318040095</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> MITHUN PAUL</span> <hr>
+			 মিঠুন পাল   <hr>
+			Address: DOHAR, DHAKA  <hr>
+			Phone: 01714897866  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 35  <hr>
+			Service: BUSINESS, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040096>Reg: 0318040096</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SHANTONA SUTRADHAR</span> <hr>
+			 শান্ত্বনা সূত্রধর   <hr>
+			Address: DOHAR, DHAKA  <hr>
+			Phone: 01798803808  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 29  <hr>
+			Service: HOUSEWIFE, Education: Graduation<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040097>Reg: 0318040097</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> ARJUN SIDDAH</span> <hr>
+			 অর্জুন সিদ্ধা   <hr>
+			Address: NABABGONJ, DHAKA  <hr>
+			Phone: 01819421626  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 40  <hr>
+			Service: EMPLOYEE, Education: PG<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040098>Reg: 0318040098</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> DINABANDHU BISWAS</span> <hr>
+			 দীনবন্ধু বিশ্বাস   <hr>
+			Address: KALIGANJ, ZINAIDHAHA  <hr>
+			Phone: 01715942950  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 39  <hr>
+			Service: EMPLOYEE, Education: PG<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040099>Reg: 0318040099</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> LIPIKA BISWAS</span> <hr>
+			 লিপিকা বিশ্বাস   <hr>
+			Address: KALIGANJ, ZINAIDHAHA  <hr>
+			Phone: 01718265634  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 27  <hr>
+			Service: HOUSEWIFE, Education: Graduation<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040100>Reg: 0318040100</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> TULSHI BISWAS</span> <hr>
+			 তুলসী বিশ্বাস   <hr>
+			Address: KALIGANJ, ZENAIDAHA  <hr>
+			Phone: 01715942950  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 55  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040101>Reg: 0318040101</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> BIMOL RAJBONGSHI</span> <hr>
+			 বিমল রাজবংশী   <hr>
+			Address: DOHAR, DHAKA  <hr>
+			Phone: 01818991382  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 47  <hr>
+			Service: Business, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040102>Reg: 0318040102</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SABITA RAJBONGSHI</span> <hr>
+			 সবিতা রাজবংশী   <hr>
+			Address: DOHAR, DHAKA  <hr>
+			Phone: 01818697033  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 42  <hr>
+			Service: Housewife, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040103>Reg: 0318040103</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SATHI RANI DAS</span> <hr>
+			 সাথী রানী দাস   <hr>
+			Address: Nababganj, Dhaka  <hr>
+			Phone: 01937987831  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 48  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040104>Reg: 0318040104</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> FULMOTI RANI DAS</span> <hr>
+			 ফুলমতি রানী দাস   <hr>
+			Address: Nababganj, Dhaka  <hr>
+			Phone: 01941832974  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 45  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040105>Reg: 0318040105</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SUDEB RAJBONGSHI</span> <hr>
+			 সুদেব রাজবংশী   <hr>
+			Address: Nababganj, Dhaka  <hr>
+			Phone: 01825598968  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 30  <hr>
+			Service: Business, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040106>Reg: 0318040106</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> LAKHI RAJBONGSHI</span> <hr>
+			 লাখী রাজবংশী   <hr>
+			Address: Nababganj, Dhaka  <hr>
+			Phone: 01403549740  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 20  <hr>
+			Service: Housewife, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040107>Reg: 0318040107</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> RADHA RANI RAJBONGSHI</span> <hr>
+			 রাধা রাণী রাজবংশী   <hr>
+			Address: Nababganj, Dhaka  <hr>
+			Phone: 01885577473  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDW</span>)&nbsp &nbsp Age: 65  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040108>Reg: 0318040108</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> AJIT HALDAR</span> <hr>
+			 অজিত হালদার   <hr>
+			Address: Nababganj, Dhaka  <hr>
+			Phone: 01892811999  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 34  <hr>
+			Service: Business, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040109>Reg: 0318040109</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SUMON DAS</span> <hr>
+			 সুমন দাস   <hr>
+			Address: Nababganj, Dhaka  <hr>
+			Phone: 01812473659  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 40  <hr>
+			Service: Employee, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040110>Reg: 0318040110</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SHAMOLI RANI DAS</span> <hr>
+			 শ্যামলী রানী দাস   <hr>
+			Address: Nababganj, Dhaka  <hr>
+			Phone: 01812473659  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDW</span>)&nbsp &nbsp Age: 60  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040111>Reg: 0318040111</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> BIPASHA DAS</span> <hr>
+			 বিপাশা দাস   <hr>
+			Address: Nababganj, Dhaka  <hr>
+			Phone: 01817063044  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 27  <hr>
+			Service: Housewife, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040112>Reg: 0318040112</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> ARJUN DAS</span> <hr>
+			 অর্জুন দাস   <hr>
+			Address: Nababganj, Dhaka  <hr>
+			Phone: 01817063044  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 55  <hr>
+			Service: Farmer, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040113>Reg: 0318040113</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> JUNU RANI DAS</span> <hr>
+			 ঝুনু রানী দাস   <hr>
+			Address: Nababganj, Dhaka  <hr>
+			Phone: 01817063044  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 50  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040114>Reg: 0318040114</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> HARADHAN RAKSHIT</span> <hr>
+			 হারাধন রক্ষিত   <hr>
+			Address: BHOLA, BARISHAL  <hr>
+			Phone: 01718259647  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 54  <hr>
+			Service: Employee, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040115>Reg: 0318040115</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> KAKOLI RANI DEY</span> <hr>
+			 কাকলী রাণী দে   <hr>
+			Address: BHOLA, BARISHAL  <hr>
+			Phone: 01717196932  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 39  <hr>
+			Service: Housewife, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040116>Reg: 0318040116</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SAMARANDRA BHUSHAN MALLIK</span> <hr>
+			 সমরেন্দ্র ভূষণ মল্লিক   <hr>
+			Address: BORHANUDDIN, BHOLA  <hr>
+			Phone: 01720276911  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 39  <hr>
+			Service: Teacher, Education: PG<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040117>Reg: 0318040117</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> PRIYANKA RANI MALLIK</span> <hr>
+			 প্রিয়াংকা রাণী মল্লিক   <hr>
+			Address: BORHANUDDIN, BHOLA  <hr>
+			Phone: 01778446287  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 28  <hr>
+			Service: Housewife, Education: PG<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040118>Reg: 0318040118</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> MRIDUL MAJI</span> <hr>
+			 মৃদুল মাঝী   <hr>
+			Address: DULARHAT, BHOLA  <hr>
+			Phone: 01731750931  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 32  <hr>
+			Service: Farmer, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040119>Reg: 0318040119</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> BELA RANI MAJI</span> <hr>
+			 বেলা রাণী মাঝি   <hr>
+			Address: DULARHAT, BHOLA  <hr>
+			Phone: 01755980048  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 26  <hr>
+			Service: Housewife, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040120>Reg: 0318040120</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> NIRAB MAJI</span> <hr>
+			 নিরব মাঝি   <hr>
+			Address: CHARFASHIION, BHOLA  <hr>
+			Phone: 01712869610  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 26  <hr>
+			Service: Farmer, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040121>Reg: 0318040121</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> LIPI RANI MAJI</span> <hr>
+			 লিপী রানী মাঝি   <hr>
+			Address: CHARFASHIION, BHOLA  <hr>
+			Phone: 01712869610  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 20  <hr>
+			Service: Housewife, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040122>Reg: 0318040122</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> DIBAKAR ROY</span> <hr>
+			 দিবাকর রায়   <hr>
+			Address: LALMOHAN, BHOLA  <hr>
+			Phone: 01714616082  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 40  <hr>
+			Service: Farmer, Education: PG<hr>
+			<p> Lila: <span style='color:red;'>Gaura</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040123>Reg: 0318040123</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> Kallani Rani Hawlader</span> <hr>
+			 কল্যাণী রানী হাওলাদার   <hr>
+			Address: DOULATKHAN, BHOLA  <hr>
+			Phone: 01746797896  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDW</span>)&nbsp &nbsp Age: 43  <hr>
+			Service: Housewife, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040124>Reg: 0318040124</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> JOYANTI ROY</span> <hr>
+			 জয়ন্তী রায়   <hr>
+			Address: BORHANUDDIN, BHOLA  <hr>
+			Phone: 01830714075  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 24  <hr>
+			Service: Housewife, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040125>Reg: 0318040125</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> DIPU TALI</span> <hr>
+			 দিপু তেলী   <hr>
+			Address: DULARHAT, BHOLA  <hr>
+			Phone: 01772676208  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 21  <hr>
+			Service: Student, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Gaura</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040126>Reg: 0318040126</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'>    KISHOR CHANDRA DAS</span> <hr>
+			 কিশোর চন্দ্র দাস   <hr>
+			Address: CHARFASHION, BHOLA  <hr>
+			Phone: 01710828794  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 31  <hr>
+			Service: Business, Education: Graduation<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040127>Reg: 0318040127</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> RICKCHARNA DAS</span> <hr>
+			 রিকর্চনা দাস   <hr>
+			Address: CHARFASHION, BHOLA  <hr>
+			Phone: 01709902181  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 43  <hr>
+			Service: Teacher, Education: PG<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040128>Reg: 0318040128</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SOGREEB CHANDRA DAS</span> <hr>
+			 সুগ্রীব চন্দ্র দাস   <hr>
+			Address: MANPURA, BHOLA  <hr>
+			Phone: 01319758074  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 24  <hr>
+			Service: Student, Education: Graduation<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040129>Reg: 0318040129</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> ANGKON CHANDRA DAS</span> <hr>
+			 অংকন চন্দ্র দাস   <hr>
+			Address: BORHANUDDIN, BHOLA  <hr>
+			Phone: 01775379338  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 22  <hr>
+			Service: Student, Education: Graduation<hr>
+			<p> Lila: <span style='color:red;'>Gaura</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040130>Reg: 0318040130</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> HAMO LATA DAS</span> <hr>
+			 হেম লতা দাস   <hr>
+			Address: MANPURA, BHOLA  <hr>
+			Phone: 01764728788  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 43  <hr>
+			Service: Housewife, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040131>Reg: 0318040131</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> AONTARA RANI</span> <hr>
+			 অন্তর রাণী   <hr>
+			Address: MANPURA, BHOLA  <hr>
+			Phone: 01747697000  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 20  <hr>
+			Service: Housewife, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040132>Reg: 0318040132</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> RITA RANI DEVNATH</span> <hr>
+			 রীতা রাণী দেবনাথ   <hr>
+			Address: MANPURA, BHOLA  <hr>
+			Phone: 01793663481  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 31  <hr>
+			Service: Housewife, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040133>Reg: 0318040133</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> JAGADISH CHANDRA DAS</span> <hr>
+			 জগদীশ চন্দ্র দাস   <hr>
+			Address: MANPURA, BHOLA  <hr>
+			Phone: 01742342115  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 55  <hr>
+			Service: Teacher, Education: PG<hr>
+			<p> Lila: <span style='color:red;'>Gaura</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040134>Reg: 0318040134</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> JHORNA RANI DAS</span> <hr>
+			 ঝর্ণা রাণী দাস   <hr>
+			Address: CHARFASHION, BHOLA  <hr>
+			Phone: 01714283551  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 29  <hr>
+			Service: Housewife, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040135>Reg: 0318040135</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> DHANANJOY DAS</span> <hr>
+			 ধনঞ্চয় দাস   <hr>
+			Address: KHALIAJORI, NETROKONA  <hr>
+			Phone: 01775628559  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 25  <hr>
+			Service: Business, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040136>Reg: 0318040136</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> DIBANI DAS</span> <hr>
+			 দিবানী দাস   <hr>
+			Address: KHALIAJORI, NETROKONA  <hr>
+			Phone: 01714254030  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 22  <hr>
+			Service: Housewife, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040137>Reg: 0318040137</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> PINKY RANI DAS</span> <hr>
+			 পিংকি রানী দাস   <hr>
+			Address: KISHOREGONJ, KISHOREGONJ  <hr>
+			Phone: 01304469426  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDB</span>)&nbsp &nbsp Age: 18  <hr>
+			Service: Student, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040138>Reg: 0318040138</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> JOYONTHO CHANDRA BISWAS</span> <hr>
+			 জয়ন্ত চন্দ্র বিশ্বাস   <hr>
+			Address: KISHOREGONJ, KISHOREGONJ  <hr>
+			Phone: 01683565893  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 29  <hr>
+			Service: Business, Education: Graduation<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040139>Reg: 0318040139</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> TULY ROY</span> <hr>
+			 তুলী রায়   <hr>
+			Address: KISHOREGONJ, KISHOREGONJ  <hr>
+			Phone: 01646115499  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 26  <hr>
+			Service: Housewife, Education: Graduation<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040140>Reg: 0318040140</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> BABY RANI BISWAS</span> <hr>
+			 বেবী রানী বিশ্বাস    <hr>
+			Address: KISHOREGONJ, KISHOREGONJ  <hr>
+			Phone: 01683565893  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 42  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040141>Reg: 0318040141</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> PRADIP CHANDRA BISWAS</span> <hr>
+			 প্রদীপ চন্দ্র বিশ্বাস   <hr>
+			Address: KISHOREGONJ, KISHOREGONJ  <hr>
+			Phone: 01918533350  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 28  <hr>
+			Service: Business, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040142>Reg: 0318040142</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SRITY RANI ACHARJEE</span> <hr>
+			 স্মৃতি রানী আচার্য   <hr>
+			Address: KISHOREGONJ, KISHOREGONJ  <hr>
+			Phone: 01994681899  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 26  <hr>
+			Service: Housewife, Education: Graduation<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040143>Reg: 0318040143</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> RINA RANI BISWAS</span> <hr>
+			 রীনা রানী  বিশ্বাস   <hr>
+			Address: KISHOREGONJ, KISHOREGONJ  <hr>
+			Phone: 01918533350  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 52  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040144>Reg: 0318040144</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> JUI RANI BISWASH</span> <hr>
+			 জুই রানী বিশ্বাস   <hr>
+			Address: KISHOREGONJ, KISHOREGONJ  <hr>
+			Phone: 01818533350  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDB</span>)&nbsp &nbsp Age: 21  <hr>
+			Service: Student, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040145>Reg: 0318040145</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> PRADIP ROBI DAS</span> <hr>
+			  প্রদীপ রবি দাস   <hr>
+			Address: KISHOREGONJ, KISHOREGONJ  <hr>
+			Phone: 01611144943  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 34  <hr>
+			Service: Business, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040146>Reg: 0318040146</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> PURNIMA RANI DAS</span> <hr>
+			 পূর্ণিমা রাণী দাস   <hr>
+			Address: KISHOREGONJ, KISHOREGONJ  <hr>
+			Phone: 01611144943  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 25  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040147>Reg: 0318040147</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> MILON RANI SUTRADHAR</span> <hr>
+			  মিলন রানী সূত্রধর   <hr>
+			Address: KISHOREGONJ, KISHOREGONJ  <hr>
+			Phone: 01726882976  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDW</span>)&nbsp &nbsp Age: 62  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040148>Reg: 0318040148</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> RAJON CHANDRA SUTRADHAR</span> <hr>
+			 রাজন চন্দ্র সূত্রধর   <hr>
+			Address: ATPARA, NETROKONA  <hr>
+			Phone: 01726882976  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 25  <hr>
+			Service: Business, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040149>Reg: 0318040149</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> DIPA RANI DAS</span> <hr>
+			 দীপা রানী দাস   <hr>
+			Address: BHALUKA, MYMENSING  <hr>
+			Phone: 01907749316  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 28  <hr>
+			Service: Housewife, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040150>Reg: 0318040150</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SUMI RANI SUTRADHAR</span> <hr>
+			 সুমি রানী সূত্রধর   <hr>
+			Address: KATIADI, KISHOREGONJ  <hr>
+			Phone: 01319946745  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 26  <hr>
+			Service: Housewife, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040151>Reg: 0318040151</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> JUMA SUTRADHAR</span> <hr>
+			 ঝুমা সূত্রধর   <hr>
+			Address: KATIADI, KISHOREGONJ  <hr>
+			Phone: 01765011329  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 27  <hr>
+			Service: Housewife, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040152>Reg: 0318040152</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> JUMA RANI SUTRADHAR</span> <hr>
+			 ঝুমা রানী সূত্রধর   <hr>
+			Address: NASIRNAGAR, B.BARIA  <hr>
+			Phone: 01734126884  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDB</span>)&nbsp &nbsp Age: 20  <hr>
+			Service: Student, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040153>Reg: 0318040153</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> CHINU RANI SUTRADHAR</span> <hr>
+			 চিনু রানী সূত্রধর   <hr>
+			Address: KATIADI, KISHOREGONJ  <hr>
+			Phone: 01762530669  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 38  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040154>Reg: 0318040154</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SABITA RANI SUTRADHAR</span> <hr>
+			 সবিতা রানী সূত্রধর   <hr>
+			Address: KATIADI, KISHOREGONJ  <hr>
+			Phone: 01762530669  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDB</span>)&nbsp &nbsp Age: 17  <hr>
+			Service: Student, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040155>Reg: 0318040155</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SUKEN CHANDRA BANIK</span> <hr>
+			 সুখেন চন্দ্র বণিক   <hr>
+			Address: GOPALGANJ, GOPALGANJ  <hr>
+			Phone: 01716954673  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 58  <hr>
+			Service: Business, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040156>Reg: 0318040156</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SHONTOSH KUMAR ROY</span> <hr>
+			 সন্তোষ কুমার রায়   <hr>
+			Address: GOPALGANJ, GOPALGANJ  <hr>
+			Phone: 01954497520  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 57  <hr>
+			Service: Business, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040157>Reg: 0318040157</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> TAPAN KUMAR PRAMANIK</span> <hr>
+			 তপন কুমার প্রামাণিক   <hr>
+			Address: GOPALGANJ, GOPALGANJ  <hr>
+			Phone: 01766784973  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 41  <hr>
+			Service: Employee, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040158>Reg: 0318040158</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> MANJU RNAI PRAMANIK</span> <hr>
+			 মঞ্জ‍ু রানী প্রামানিক   <hr>
+			Address: GOPALGANJ, GOPALGANJ  <hr>
+			Phone: 01745405252  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 35  <hr>
+			Service: Housewife, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040159>Reg: 0318040159</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> ARPON KUMER PRAMANIK</span> <hr>
+			 অর্পন কুমার প্রামানিক   <hr>
+			Address: GOPALGANJ, GOPALGANJ  <hr>
+			Phone: 01745405252  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 14  <hr>
+			Service: Student, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040160>Reg: 0318040160</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SWAPON KUMAR DAS</span> <hr>
+			 স্বপন কুমার দাস   <hr>
+			Address: GOPALGANJ, GOPALGANJ  <hr>
+			Phone: 01727254724  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 57  <hr>
+			Service: TAILOR, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Gaura</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040161>Reg: 0318040161</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SANDHA RANI DAS</span> <hr>
+			 সন্ধ্যা রানী দাস   <hr>
+			Address: GOPALGANJ, GOPALGANJ  <hr>
+			Phone: 01753605378  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 52  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040162>Reg: 0318040162</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> UNNATI HIRA</span> <hr>
+			 উন্নতি হীরা   <hr>
+			Address: GOPALGANJ, GOPALGANJ  <hr>
+			Phone: 01713592420  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 56  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040163>Reg: 0318040163</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SUKUMAR BARAI</span> <hr>
+			 সুকুমার বাড়ৈ   <hr>
+			Address: MUKSUDPUR, GOPALGANJ  <hr>
+			Phone: 01743683799  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 50  <hr>
+			Service: Farmer, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040164>Reg: 0318040164</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SHILPI BISWAS</span> <hr>
+			 শিল্পী বিশ্বাস   <hr>
+			Address: RAJAI, MADARIPUR  <hr>
+			Phone: 01739479718  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 29  <hr>
+			Service: Housewife, Education: PG<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040165>Reg: 0318040165</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SHIBU GAIN</span> <hr>
+			 শিবু গাইন   <hr>
+			Address: Rajoir, Madaripur  <hr>
+			Phone: 01918303709  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 54  <hr>
+			Service: Farmer, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040166>Reg: 0318040166</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SUJATA RANI GAIN</span> <hr>
+			 সুজাতা রানী গাইন   <hr>
+			Address: Rajoir, Madaripur  <hr>
+			Phone: 01937243406  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 48  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040167>Reg: 0318040167</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SHOVA RANI BAR</span> <hr>
+			 শোভা রানী বর   <hr>
+			Address: Rajoir, Madaripur  <hr>
+			Phone: 01981561032  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 55  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040168>Reg: 0318040168</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> RAMEN BISWAS</span> <hr>
+			 রমেন বিশ্বাস   <hr>
+			Address: GOPALGANJ, GOPALGANJ  <hr>
+			Phone: 01728818581  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 62  <hr>
+			Service: Farmer, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Gaura</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040169>Reg: 0318040169</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SUNITE HIRA</span> <hr>
+			 সুনিতী হীরা   <hr>
+			Address: GOPALGANJ, GOPALGANJ  <hr>
+			Phone: 01726453572  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 48  <hr>
+			Service: Housewife, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Gaura</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040170>Reg: 0318040170</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SHAYA RANI BISWAS</span> <hr>
+			 ছায়া রানী বিশ্বাস   <hr>
+			Address: GOPALGANJ, GOPALGANJ  <hr>
+			Phone: 01761042924  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 78  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040171>Reg: 0318040171</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> FULMALA RANI HIRA</span> <hr>
+			 ফুলমালা রানী হীরা   <hr>
+			Address: GOPALGANJ  <hr>
+			Phone: 01757521355  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 64  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040172>Reg: 0318040172</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> ELA RANI MANDAL</span> <hr>
+			 ইলা রানী মন্ডল   <hr>
+			Address: Kotalipara, Gopalganj  <hr>
+			Phone: 01772012581  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 39  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040173>Reg: 0318040173</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SUNIL BAKSHE</span> <hr>
+			 সুনীল বক্শী   <hr>
+			Address: Kotalipara, Gopalganj  <hr>
+			Phone: 01961219068  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 58  <hr>
+			Service: RAJMISTRI, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040174>Reg: 0318040174</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> BELA BALA</span> <hr>
+			 বেলা বালা   <hr>
+			Address: Kotalipara, Gopalganj  <hr>
+			Phone: 01961219068  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 35  <hr>
+			Service: Housewife, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040175>Reg: 0318040175</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SUBASH DAS</span> <hr>
+			 সুবাস দাস   <hr>
+			Address: Kotalipara, Gopalganj  <hr>
+			Phone: 01734223720  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 38  <hr>
+			Service: Business, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040176>Reg: 0318040176</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> KABITA RANI DAS</span> <hr>
+			 কবিতা রানী দাস   <hr>
+			Address: Kotalipara, Gopalganj  <hr>
+			Phone: 01734223720  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 32  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040177>Reg: 0318040177</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> LIPIKA BARAI</span> <hr>
+			 লিপিকা বাড়ৈ   <hr>
+			Address: Kotalipara, Gopalganj  <hr>
+			Phone: 01988706049  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 24  <hr>
+			Service: Housewife, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040178>Reg: 0318040178</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> AMRITA GAIN</span> <hr>
+			 অমৃত গাইন   <hr>
+			Address: Kotalipara, Gopalganj  <hr>
+			Phone: 01988706049  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 32  <hr>
+			Service: Tailor, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040179>Reg: 0318040179</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> GANDHARI MOLLIK</span> <hr>
+			 গান্ধারি মল্লিক   <hr>
+			Address: Rajoir, Madaripur  <hr>
+			Phone: 01725028270  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDW</span>)&nbsp &nbsp Age: 68  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040180>Reg: 0318040180</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> RITA RANI MANDOL</span> <hr>
+			 রীতা রানী মন্ডল   <hr>
+			Address: Kotalipara, Gopalganj  <hr>
+			Phone: 01983297033  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDB</span>)&nbsp &nbsp Age: 42  <hr>
+			Service: Employee, Education: PG<hr>
+			<p> Lila: <span style='color:red;'>Krishna</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040181>Reg: 0318040181</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> PARISHKAR HALDER</span> <hr>
+			 পরিস্কার হাওলাদার   <hr>
+			Address: Kotalipara, Gopalganj  <hr>
+			Phone: 01957105422  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDW</span>)&nbsp &nbsp Age: 77  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040182>Reg: 0318040182</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> RINA RANI HALDER</span> <hr>
+			 রিনা রানী হালদার   <hr>
+			Address: Kotalipara, Gopalganj  <hr>
+			Phone: 01924809378  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 38  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040183>Reg: 0318040183</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SHUKDEV TALUKDER</span> <hr>
+			 শুকদেব তালুকদার   <hr>
+			Address: Kotalipara, Gopalganj  <hr>
+			Phone: 01764617941  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 52  <hr>
+			Service: Farmer, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040184>Reg: 0318040184</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SHIMA TALUKDER</span> <hr>
+			 শিমা তালুকদার   <hr>
+			Address: Kotalipara, Gopalganj  <hr>
+			Phone: 01764617941  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 41  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040185>Reg: 0318040185</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SURJA KUMAR PRAMANIK</span> <hr>
+			 সূর্য্য কুমার প্রামানিক   <hr>
+			Address: KALUKHALI,  RAJBARI  <hr>
+			Phone: 01721661207  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 52  <hr>
+			Service: Employee, Education: Graduation<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040186>Reg: 0318040186</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SUJATA RANI BISWAS</span> <hr>
+			 সুজাতা রানী বিশ্বাস   <hr>
+			Address: KALUKHALI,  RAJBARI  <hr>
+			Phone: 01757692347  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 45  <hr>
+			Service: Doctor, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040187>Reg: 0318040187</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> TAPASH KUMAR DAS</span> <hr>
+			 তাপস কুমার দাস   <hr>
+			Address: RAJBARI, RAJBARI  <hr>
+			Phone: 01750032145  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 54  <hr>
+			Service: Employee, Education: Secondary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040188>Reg: 0318040188</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> RAMA DAS</span> <hr>
+			 রমা দাস   <hr>
+			Address: RAJBARI SADAR, RAJBARI  <hr>
+			Phone: 01750032144  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 42  <hr>
+			Service: Employee, Education: Graduation<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040189>Reg: 0318040189</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> BASONA RANI MONDAL</span> <hr>
+			 বাসনা রানী মন্ডল   <hr>
+			Address: RAJBARI, RAJBARI  <hr>
+			Phone: 01735142673  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 38  <hr>
+			Service: Housewife, Education: NA<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040190>Reg: 0318040190</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> BABLU SHARMA</span> <hr>
+			 বাবলু শর্মা   <hr>
+			Address: Baliakandi,  Rajbari  <hr>
+			Phone: 01731358162  <hr>
+		 	Gender:	Male (<span style='color:red;'>DA</span>)&nbsp &nbsp Age: 41  <hr>
+			Service: Business, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040191>Reg: 0318040191</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> KAMONA SHARMA</span> <hr>
+			 কামনা শর্মা   <hr>
+			Address: Baliakandi,  Rajbari  <hr>
+			Phone: 01791358162  <hr>
+		 	Gender:	Female (<span style='color:red;'>DDA</span>)&nbsp &nbsp Age: 30  <hr>
+			Service: Housewife, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Any</span></p>
+		</td>
+	</tr><tr>
+		<td><img src='https://via.placeholder.com/50' height=200 width=180 style='border-width:15px; border-color:maroon;' ></td>
+		<td><form target='_blank' action='devedit.php' method='POST'><button name='edit' class= 'tbutton' type='submit' value=0318040192>Reg: 0318040192</button>
+		</form>
+
+			<hr>
+			Name:<span style='color:red;'> SANJAY SAHA</span> <hr>
+			 সঞ্জয় সাহা   <hr>
+			Address: Kaliakoir, Gazipur  <hr>
+			Phone: 01717347262  <hr>
+		 	Gender:	Male (<span style='color:red;'>DB</span>)&nbsp &nbsp Age: 32  <hr>
+			Service: Business, Education: Primary<hr>
+			<p> Lila: <span style='color:red;'>Gaura</span></p>
+		</td>
+	</tr></table>		</div>
+	</div>
+</div>
+
+
+<div style="clear:both;">
+</div>
+
+
+
+<div style= "padding: 5px; margin-top: 5px; text-align: center; " >
+
+    <form method="post" action="enter_bangla_name.php" target="_blank" style="cursor: pointer; text-align: center; display:inline-block;" >
+    <a class="btn btn-info" onclick="myFunction()"> Reload </a>
+    <a class="btn btn-info" onclick="window.location= 'dataentry_dashboard.php';">Go to Dashboard</a>
+    <input type="hidden" name="bbb" value="031804">
+    <button class="btn btn-info" type="submit" value="Enter Bangla Name">Enter Bangla Name</button>
+	<button class="btn btn-danger" onclick="printDiv('pslist')" value="Print Summary List">Print Summary List</button>
+	<button class="btn btn-danger" onclick="printDiv2('proof_list')" value="Proof Check">Proof Check</button>
+		<button class="btn btn-danger" onclick="printDiv3('tsheet')" value="Top Sheet">Top Sheet</button>
+
+	</form>
+    <form method="post" action="dataexport2.php" target="_blank" style="cursor: pointer; text-align: center; display:inline-block;" >
+    <input type="hidden" id="templeid" name="templeid" value="031804">
+
+    <button class="btn btn-info" onclick=" " value="Top Sheet">Export to Excel</button>
+
+    </form>
+
+    <br><br>
+ 		<iframe name="myframe1" style="width:100%;height:350px; border:1px solid #ddd;"></iframe>
+		<div style="display:none"> <div id="pslist" ></div> <div id="proof_list" ></div><div id="tsheet" ></div></div>
+
+<script>
+    function myFunction() {
+        location.reload();
+    }
+
+    $(document).ready(function(){
+        var tid = "031804";
+
+        var request = $.ajax({
+        url: "print_summarylist_temple_data.php",
+        method: "POST",
+        data: { myData : JSON.stringify(tid)  },
+        dataType: "html"
+        });
+        request.done(function( msg ) {
+        document.getElementById("pslist").innerHTML =msg;
+        });
+        request.fail(function( jqXHR, textStatus ) {
+        alert( "Request failed: " + textStatus );
+        });
+
+
+        var request = $.ajax({
+        url: "print_prooflist_temple_data.php",
+        method: "POST",
+        data: { myData : JSON.stringify(tid)  },
+        dataType: "html"
+        });
+        request.done(function( msg ) {
+        document.getElementById("proof_list").innerHTML =msg;
+        });
+        request.fail(function( jqXHR, textStatus ) {
+        alert( "Request failed: " + textStatus );
+        });
+
+
+
+        var request = $.ajax({
+        url: "print_topsheet_temple_data.php",
+        method: "POST",
+        data: { myData : JSON.stringify(tid)  },
+        dataType: "html"
+        });
+        request.done(function( msg ) {
+        document.getElementById("tsheet").innerHTML =msg;
+        });
+        request.fail(function( jqXHR, textStatus ) {
+        alert( "Request failed: " + textStatus );
+        });
+
+    });
+
+
+	function printDiv(divName) {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+        document.body.innerHTML = printContents;
+        window.print();
+        document.body.innerHTML = originalContents;
+    }
+
+	function printDiv2(divName) {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+        document.body.innerHTML = printContents;
+        window.print();
+        document.body.innerHTML = originalContents;
+    }
+    function printDiv3(divName) {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+        document.body.innerHTML = printContents;
+        window.print();
+        document.body.innerHTML = originalContents;
+    }
+</script>
+
+</body>
+</html>
+

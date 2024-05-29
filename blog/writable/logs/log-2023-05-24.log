@@ -1,0 +1,2114 @@
+CRITICAL - 2023-05-24 00:00:21 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 00:00:21 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 00:04:25 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 00:05:18 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 00:05:18 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 00:05:38 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 00:05:38 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 00:06:10 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 00:06:10 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 00:07:08 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 00:07:08 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 00:08:38 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 00:08:38 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 00:11:59 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 00:11:59 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 00:17:59 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 00:17:59 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 00:21:00 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 00:21:00 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 00:26:15 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 00:26:53 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 00:26:53 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 00:43:55 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 00:43:55 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 00:47:36 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 00:47:36 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 00:50:52 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 00:50:52 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 01:00:57 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 01:00:57 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 01:08:41 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 01:08:41 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 01:13:58 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 01:13:58 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 01:34:57 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 01:34:57 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 01:56:15 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 01:56:15 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 01:56:15 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 01:56:15 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 02:20:23 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 02:20:23 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 03:17:50 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 03:17:50 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 03:31:46 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 03:31:46 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 03:32:34 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 03:32:34 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 03:36:40 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 03:36:40 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 03:43:20 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 03:43:20 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 03:43:21 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 03:43:29 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 03:43:29 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 03:43:30 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 03:43:43 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 03:43:43 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 03:43:44 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 03:44:28 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 03:44:28 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 03:52:29 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 03:52:29 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 04:05:34 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 04:05:34 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 04:40:57 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 04:40:57 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 04:51:49 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 04:51:49 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 04:52:36 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 04:52:36 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 05:23:18 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 05:23:18 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 05:33:42 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 05:40:43 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 05:40:43 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 05:49:40 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 05:49:40 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 06:13:11 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 06:13:11 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 06:15:43 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 06:29:31 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 06:29:31 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 06:29:33 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 06:29:33 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 07:01:18 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 07:01:18 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 07:22:30 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 07:22:30 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 07:22:36 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 07:22:37 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 07:22:37 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 07:22:38 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 07:50:54 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 07:50:54 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 08:08:53 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 08:08:53 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 08:08:53 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 08:08:53 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 08:09:38 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 08:58:46 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 08:58:46 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 08:59:06 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 08:59:06 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 09:06:23 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 09:06:23 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 09:28:30 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 09:31:22 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 09:31:22 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 09:37:53 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 09:37:53 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 09:37:54 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 09:37:54 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 09:38:11 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 09:38:11 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 10:51:46 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 10:53:57 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 10:53:57 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 11:03:02 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 11:03:02 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 11:03:02 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 11:03:02 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 11:05:53 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 11:05:53 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 11:16:27 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 11:16:27 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 11:28:21 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 12:02:12 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 12:02:12 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 12:29:30 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 12:29:30 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 12:45:27 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 12:48:14 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 12:48:14 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 12:56:27 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 12:56:27 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 13:20:33 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 13:20:33 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 13:30:51 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 13:48:30 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 13:48:30 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 13:48:31 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 13:48:31 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 13:48:35 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 13:48:35 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 13:59:51 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 14:06:44 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 14:06:44 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 15:14:22 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 15:14:22 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 15:36:14 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 15:36:14 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 15:36:14 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 15:36:14 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 15:44:18 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 15:44:18 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 15:46:22 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 15:46:22 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 15:55:43 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 15:55:43 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 16:12:09 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 16:12:09 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 16:33:24 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 16:33:24 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 16:35:56 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 16:35:56 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 17:11:49 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 17:11:49 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 17:20:59 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 17:25:39 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 17:25:39 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 17:25:41 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 17:25:41 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 17:25:42 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 17:25:42 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 17:25:43 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 17:25:43 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 17:52:46 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 17:52:46 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 18:18:16 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 18:18:16 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 18:59:03 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 19:07:45 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 19:07:45 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 19:34:59 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 19:34:59 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 19:34:59 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 19:34:59 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 20:14:30 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 20:14:30 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 20:28:31 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 20:28:31 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 22:05:40 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 22:05:40 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 22:05:41 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 22:05:41 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 22:05:41 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 22:05:41 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 22:05:41 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 22:05:41 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 22:05:41 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 22:05:41 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 22:13:43 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(865): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 22:13:43 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 22:30:20 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 22:30:20 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 22:41:45 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 22:41:45 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 22:45:36 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 22:45:36 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 22:53:03 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 22:53:03 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-05-24 22:57:56 --> The action you requested is not allowed.
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/CodeIgniter.php(998): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/blog/system/CodeIgniter.php(458): CodeIgniter\CodeIgniter->sendResponse()
+#5 /var/www/html/blog/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-24 22:57:56 --> Uncaught CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed. in /var/www/html/blog/system/HTTP/ResponseTrait.php:709
+Stack trace:
+#0 /var/www/html/blog/system/HTTP/ResponseTrait.php(709): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /var/www/html/blog/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#2 /var/www/html/blog/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#3 /var/www/html/blog/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

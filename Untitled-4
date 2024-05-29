@@ -1,0 +1,12 @@
+প্রাপক, <br>
+'.id_name($row["transid"]).'<br>
+'.id_vill($row["transid"]).' <br>
+ 
+ডাকঃ'.id_po_bn($row["transid"]).",থানাঃ".ps_en_bn(id_ps($row["transid"])).', <br>
+ জেলা:'.dist_en_bn(id_dist($row["transid"])).' <br>
+
+
+
+
+ '.id_phone($row["transid"]).' 
+</td>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JPS Initiation: Photo Upload</title>
+    <link rel="stylesheet" href="assets/croppie.css" />
+    <link
+      href="./assets/bootstrap-4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/mdb/mdb.lite.min.css" />
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/webcam.min.js"></script>
+    <script src="assets/croppie.min.js"></script>
+    <script
+      src="./assets/bootstrap-4.4.1/js/bootstrap.min.js"      
+    ></script>
+    <!-- <script src="./assets/mdb/popper.min.js"></script> -->
+    <script src="./assets/mdb/mdb.min.js"></script>
+    <!-- CSS -->
+    <style>
+      #my_camera {        
+        margin: 0 auto;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <div class="mt-3 mb-2">
+      <div class="input-group mb-3">
+        <input
+          type="search"
+          class="form-control"
+          placeholder="Image ID"
+          aria-label="Image ID"
+          name="name"
+          aria-describedby="search"
+          autofocus
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-md btn-outline-danger m-0 px-3 py-2 z-depth-0 waves-effect"
+            type="button"
+            id="search"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+      <h4 class="text-center text-info showName"></h4>
+      <h5 class="text-center text-muted showImageName"></h5>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-sm-12 crop-container d-none">
+        <div class="card">
+          <div class="card-body text-center">
+            <img src="" alt="" class="crop" />
+            <button class="btn btn-md btn-success upload mb-3">Upload</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 snap-container">
+        <div class="card">
+          <div class="card-body text-center">
+            <div id="my_camera"></div>
+            <button class="btn blue-gradient snap_btn mt-2" disabled>Take Snap</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 result d-none">
+        <div class="card text-center">
+          <div class="card-body">
+            <h3 class="text-danger">Successfully Uploaded</h3>
+            <button class="btn btn-info start mt-2">Upload More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $("document").ready(function() {
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (isMobile) {
+          Webcam.set({
+            width: 280,
+            height: 240,
+            image_format: "jpg",
+            jpeg_quality: 90,
+            constraints: { facingMode: { exact: "environment" } }
+          });
+        } else {
+          Webcam.set({
+            width: 320,
+            height: 240,
+            image_format: "jpeg",
+            jpeg_quality: 85
+          });
+        }
+
+        Webcam.attach("#my_camera");
+
+        let croppie_option = {
+          type: "base64",
+          format: "jpg",
+          size: { width: 150, height: 150 }
+        };
+        let croppie_init = {
+          boundary: { width: 320, height: 300 },
+          viewport: {
+            width: 200,
+            height: 200,
+            type: "square"
+          },
+          enforceBoundary: false,
+          enableResize: true
+        };
+
+        let resize = "";
+
+        function take_snapshot() {
+          let shutter = new Audio();
+          shutter.autoplay = true;
+          shutter.src = navigator.userAgent.match(/Firefox/)
+            ? "assets/shutter.ogg"
+            : "assets/shutter.mp3";
+          shutter.play();
+
+          $(".crop-container").toggleClass("d-none");
+          $(".snap-container").toggleClass("d-none");
+
+          Webcam.snap(function(data) {
+            $(".crop").attr("src", data);
+          });
+
+          resize = $(".crop").croppie(croppie_init);
+        }
+
+        function upload_image(data) {
+          let name = $(".showImageName").text();
+          if (name.length > 0) {
+            $.post("upload.php", { data, name })
+              .done(function(res) {
+                if (res === "true") {
+                  $(".crop-container").toggleClass("d-none");
+                  $(".result").toggleClass("d-none");
+                } else {
+                  alert(res);
+                }
+              })
+              .fail(function(err) {
+                alert("Failed try again");
+              });
+          }
+        }
+
+        $(".snap_btn").click(take_snapshot);
+        $(".upload").click(function() {
+          resize.croppie("result", croppie_option).then(function(img) {
+            if (confirm("Are You Sure?")) {
+              upload_image(img);
+            } else {
+              location.reload();
+            }
+          });
+        });
+
+        $(".start").click(function() {
+          location.reload();
+        });
+
+        function search_name(name) {
+          $.post("search.php", { name })
+            .done(function(res) {
+              if (res) {
+                let data = JSON.parse(res);
+                $(".showName").html(data[0]);
+                $(".showImageName").html(data[1]);
+                if (data[1]) {                  
+                  $('.snap_btn').prop('disabled', false);
+                }
+              } else {
+                $(".showName").removeClass("text-info");
+                $(".showName").addClass("text-danger");
+                $(".showName").html("Not found...");
+                $(".showImageName").html('....');
+              }
+            })
+            .fail(function(err) {
+              console.log(err);
+            });
+        }
+
+        $("#search").on("click", () => {
+          let inp = $('input[name="name"]');
+          let name = inp.val();
+          if (name.length > 0) {
+            search_name(name);
+          } else {
+            inp.focus();
+          }
+        });
+
+        $('input[name="name"]').on("keypress", function(e) {
+          let name = $(this).val();
+          $('.snap_btn').prop('disabled', true);
+          if (e.which === 13) {
+            if (name.length > 0) {
+              search_name(name);
+            } else {
+              $(this).focus();
+            }
+          }
+        });
+      });      
+    </script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('sw.js');
+        });
+      }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>বৈষ্ণব পঞ্জিকা: মাসিক হরেকৃষ্ণ সমাচার</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="gcal-bn.js"></script>
+    <script src="gcal-ui.js"></script>
+  </head>
+  <body>
+    <main class="calendar-contain">
+      <div id="calendarText" style="display: none"></div>
+
+      <div id="selectLoc" style="display: none">
+        <h1>Find location</h1>
+        <p>
+          Type part of location name into text field and select location from
+          list below. Search is case insensitive. You can type part of city name
+          or part of country name.
+        </p>
+        <input
+          type="text"
+          size="40"
+          id="userloc"
+          onkeyup="findLoc('userloc', 'locations')"
+        />
+        <button type="button" onclick="findLoc('userloc', 'locations')">
+          Search
+        </button>
+        <div id="locations"></div>
+      </div>
+    </main>
+    <script>
+      window.onload = ()=>{
+        calcCalendar(new GregorianDateTime());
+        setTab("cal");
+      }
+    </script>
+  </body>
+</html>

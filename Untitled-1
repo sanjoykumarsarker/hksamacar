@@ -1,0 +1,43 @@
+$courier_description=$row['courier_name'].$row['courier_description'];
+
+ $news_price=(intval($row["ag_quantity"])*intval($row["news_rate"]));
+
+ $news_rate=$row['news_rate'];;
+ 
+ ,news_rate,news_price,courier_description									<option>Postage</option>
+													<option>Travelling</option>
+													<option>devotee</option>
+													<option>Paper</option>
+													<option>Entertainment</option>
+													<option>Internet</option>
+													<option>Book</option>
+													<option>Legal Fee</option>
+													<option>Repair</option>
+													<option>Asset Purchase</option>
+
+													devotee_comments
+													postage_comments
+													travelling_comments
+													devotee_comments
+													paper_comments
+													entertainment_comments
+													internet_comments
+													book_comments
+													legal_comments
+													repair_comments
+													asset_comments echo  $paper_detais=$_POST["paper_detais"];
+  
+  
+  array_push($fff,"Paper");												
+array_push($fff,"Printing");	
+array_push($fff,"Binding");												
+array_push($fff,"Layout");												
+array_push($fff,"Transport");												
+array_push($fff,"Others");												
+array_push($fff,"Postage Indirect");
+array_push($fff,"Transport Indirect");												
+
+array_push($fff,"Others Indirect)
+
+
+ 
